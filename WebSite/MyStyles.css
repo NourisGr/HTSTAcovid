@@ -1,0 +1,41 @@
+#cen {
+    text-align: center;
+} 
+
+#cenII {
+    text-align: center;
+}
+.par {
+    color: red;
+}
+#yel {
+    background-color: yellow;
+}
+#yell {
+    background-color: yellow;
+}
+.parII {
+    color: blue;
+}
+#yelll {
+    background-color: yellow;
+}
+#cenIII {
+    text-align: center;
+}
+#cenIIII {
+    text-align: center;
+}
+#cenIIIII {
+    text-align: center;
+}
+span {
+    background-color: yellow;
+}
+.center {
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  width: auto;
+}
+    
