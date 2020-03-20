@@ -38,4 +38,6 @@ span {
   margin-right: auto;
   width: auto;
 }
-    
+a:hover {
+background-color: gold;
+}
