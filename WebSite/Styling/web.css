@@ -41,6 +41,10 @@ span {
 a:hover {
 background-color: gold;
 }
-#bgc {
-    background-color: grey;
+
+li:nth-child(2) {
+    background: grey;
+}
+li:nth-child(4){
+    background: grey;
 }
