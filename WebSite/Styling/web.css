@@ -54,3 +54,8 @@ li:nth-child(4){
     text-align: center;
     background-color: darkgrey;
 }
+
+section{
+
+    font-size: 50px;
+}
