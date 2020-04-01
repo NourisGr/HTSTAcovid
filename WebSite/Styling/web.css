@@ -81,3 +81,11 @@ section{
 body {
     margin: 0;
 }
+
+.topdist {
+padding-top: 35px;
+}
+
+.imagetopdist {
+    padding-top: 60px;
+}
