@@ -53,8 +53,12 @@ li:nth-child(4){
 .navbar {
     text-align: center;
     background-color: darkgrey;
+    padding: 21px 15px;
 }
 
+.navbar a {
+    color: black;
+}
 section{
 
     font-size: 50px;
