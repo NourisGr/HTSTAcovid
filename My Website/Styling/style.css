@@ -1,20 +1,5 @@
-
-.center {
-  display: block;
-  margin-left: 200px;
-  margin-right: auto;
-  width: auto;
-}
 a:hover {
 background-color: gold;
-}
-
-li:nth-child(2) {
-    background: grey;
-}
-
-li:nth-child(4){
-    background: grey;
 }
 
 .navbar {
@@ -40,16 +25,15 @@ li:nth-child(4){
     text-decoration: line;
 }
 
-section{
-
-    font-size: 40px;
+p {
+    font-size: 30px;
 }
 
 body {
-    background-color: grey;
+    background-color: lightblue;
     margin: 0;
 }
-
+/*
 .topdist {
 padding-top: 35px;
 }
@@ -57,8 +41,23 @@ padding-top: 35px;
 .imagetopdist {
     padding-top: 60px;
 }
-
+*/
 .imgsize {
     height: 15px;
-    text-align: right;
+}
+
+.homeimg {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.space {
+    border-spacing: 5px;
 }
