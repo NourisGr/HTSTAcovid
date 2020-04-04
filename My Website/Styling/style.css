@@ -37,11 +37,11 @@ body {
 .topdist {
 padding-top: 35px;
 }
-
+*/
 .imagetopdist {
     padding-top: 60px;
 }
-*/
+
 .imgsize {
     height: 15px;
 }
@@ -58,6 +58,9 @@ h1 {
     padding-top: 35px;
 }
 
-.space {
-    border-spacing: 5px;
+
+
+.one {
+    padding: 5px;
+
 }
