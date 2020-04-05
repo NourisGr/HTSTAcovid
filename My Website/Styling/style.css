@@ -1,28 +1,40 @@
-a:hover {
-background-color: gold;
-}
-
 .navbar {
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a{
     text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
     vertical-align: middle;
     line-height: 50px;
-    font-size: 16px;
-    color:white;
-    padding: 21px 15px;
-    text-decoration: line;
-}
+  }
+
+  .navbar a:hover {
+    background-color:gold;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  }
 
 p {
     font-size: 30px;
@@ -55,13 +67,29 @@ h1 {
 
 .hometext {
     padding: 5px;
+    font-size: 30px;
 }
 
 .aboutetext {
     padding: 5px;
+    font-size: 30px;
 }
 
 .aboutimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactpage {
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    text-shadow: gold;
+
+}
+
+.contactimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
