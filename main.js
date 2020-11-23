@@ -1,16 +1,5 @@
-var countBoxes=0;
-var currentBoxColor= "boxcolor1";
-function CreatBox() {
-    let strOfRepeatingBoxes = document.getElementById("clickTimes").value;
-    let numbersOfRepeatingBoxes = Number (strOfRepeatingBoxes);
-    for (let i = 0; 1 < numbersOfRepeatingBoxes; i++)   {
-        countBoxes++;
-        let addBox = '<div classes="box ' + currentBoxColor +'">' + countBoxes '</div>';
+var arrayOfcities = ["Luxembourg city, Esch, bascharage"];
 
-        if (currentBoxColor == "boxColor1") {
-            currentBoxColor = "box Color2";
-        }
-        
-    }
-
+function Dodispaly() {
+    document.getElementById("Where").innerHTML = arrayOfcities;
 }
