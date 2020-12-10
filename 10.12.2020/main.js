@@ -12,5 +12,11 @@ function SelectThisCountry() {
         alert("Wrong choice");
     } else {
         document.getElementById("selectedCountries").innerHTML += '<li>' + countries[currentSelectCountry] + "</li>";
+
+        countries.splice(currentSelectCountry, 1);
+
+        document.getElementById("listOfCountries").innerHTML = "";
+        fillInSelect();
+        //alert(countries);
     }
 }
