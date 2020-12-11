@@ -2,5 +2,5 @@
 
 LPEM
 
-- Website in progress
+- Website project canceled on this repo -> moved to https://github.com/NourisGr/nourisgr.github.io
 - Javascript code
