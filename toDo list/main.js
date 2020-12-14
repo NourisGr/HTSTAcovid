@@ -1,4 +1,4 @@
-taskList = [];
+var countries = ["Luxembourg", "Greece", "Italy", "France"]
 
 function AddMyToDo() {
     let myItemToAdd = document.getElementById("addToDo").value;
