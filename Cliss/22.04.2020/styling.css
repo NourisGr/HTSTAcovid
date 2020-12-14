@@ -1,0 +1,30 @@
+body {
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+#fullcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.soldout {
+    position: absolute;
+    top: 50%;
+    background-color: red;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: soild 1px red;
+    align-items: center;
+    margin: 10%
+}
+img {
+    width: 400px;
+}
