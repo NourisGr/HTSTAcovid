@@ -10,7 +10,7 @@ function ComputeSum() {
 
     newRow += "<tb>" + upToNumber + "</tb>";
 
-    let ComputerSum = 0;
+    let computedSum = 0;
     for (let i = fromNumber; i <= upToNumber; i++) {
         computedSum += 1 / ((i + 1) * (i + 4));
     }
