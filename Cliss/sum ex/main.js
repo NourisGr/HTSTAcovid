@@ -3,12 +3,12 @@ function ComputeSum() {
     let fromNumber = document.getElementById("fromValue").value
     fromNumber = Number(fromNumber);
 
-    newRow += "<tb>" + fromNumber + "</tb>";
+    newRow += "<td>" + fromNumber + "</td>";
 
     let upToNumber = document.getElementById("toValue").value;
     upToNumber = Number(upToNumber);
 
-    newRow += "<tb>" + upToNumber + "</tb>";
+    newRow += "<td>" + upToNumber + "</td>";
 
     let computedSum = 0;
     for (let i = fromNumber; i <= upToNumber; i++) {
