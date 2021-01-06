@@ -1,7 +1,7 @@
 def list_count_9(nums):
   count = 0  
   for num in nums:
-    if num == 9:
+    if "9" in str (num):
       count = count + 1
 
   return count
