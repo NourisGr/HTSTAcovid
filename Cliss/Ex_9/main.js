@@ -1,6 +1,6 @@
 function numbers()
 {
-    for (i=500;i<=700;i++){
+    for (i=501;i<700;i++){
         document.getElementById("cliss").innerHTML += i + '<br>'
     }
 }
