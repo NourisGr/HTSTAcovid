@@ -12,6 +12,6 @@ function startCode()
         {
             i--;
         }
-        document.getElementById("dataHere").innerHTML += "<div>" + i "</div>";
+        document.getElementById("dataHere").innerHTML += "<div>" + i ;
     }    
 }

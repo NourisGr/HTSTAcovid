@@ -1,0 +1,18 @@
+.square{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 2px;
+    font-size: xx-small;
+}
+
+.squareVisited {
+    background-color: aqua;
+}
+.squareNonVisited {
+    background-color: gold;
+}
+
+.mineBlock {
+    
+}
