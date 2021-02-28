@@ -2,6 +2,7 @@ function drawline() {
     let c = document.getElementById("myCanvas");
 
     let ctx = c.getContext("2d");
+    
     //Roof
     ctx.moveTo(0, 100);
     ctx.lineTo(150, 0);
