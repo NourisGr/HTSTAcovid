@@ -1,4 +1,4 @@
-function drawline() {
+function Drawhouse() {
     let c = document.getElementById("myCanvas");
 
     let ctx = c.getContext("2d");
@@ -44,6 +44,19 @@ function drawline() {
 
     ctx.moveTo(265, 180);
     ctx.lineTo(265, 150);
+    ctx.stroke();
+
+     //walls
+    ctx.moveTo(0, 100);
+    ctx.lineTo(0, 300);
+    ctx.stroke();
+
+    ctx.moveTo(300, 100);
+    ctx.lineTo(300, 300);
+    ctx.stroke();
+
+    ctx.moveTo(300, 300);
+    ctx.lineTo(0, 300);
     ctx.stroke();
 
 }
