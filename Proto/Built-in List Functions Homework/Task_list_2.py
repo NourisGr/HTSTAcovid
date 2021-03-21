@@ -10,8 +10,7 @@ print(carlist[0])
 #4) Print only the color of the first element [ "red"] of the carlist over the terminal.
 
 #5) Replace the color of the first element [ "red"] of the carlist to [ "green"].
-carlist[(0)]
-print(carlist)
+
 
 
 
