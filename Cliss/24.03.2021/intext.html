@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='PaintCoordinates.js'></script>
+    <style>
+        .box{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        .redBox {
+            background-color: red;
+        }
+
+        .blackBox{
+            background-color: black;
+        }
+
+        .blueBox {
+            background-color: blue;
+        }
+
+        .greenBox {
+            background-color: green;
+        }
+        /*
+        body{
+            display: flex;
+            justify-content: space-between;
+        }
+        */
+        #canvas{
+            border: solid 5px black;
+        }
+    </style>
+</head>
+<body onload="FirstDrawing();">
+    <canvas id="canvas" width="1500" height="600"></canvas> <h2>Please draw here // Hei dessinéieren w.e.g. // S.V.P. dessiner ici // Bitte hier zeichnen!</h2> <button id="btn">Stop drawing // Hal op ze zeechnen // Arrêter de dessiner // Zeichnen blockieren</button>
+    <div id="xCoord"></div>
+    <div id="yCoord"></div>
+    <div class="box blackBox" id="blackColorPick"></div>
+    <div class="box redBox" id="redColorPick"></div>
+    <div class="box blueBox" id="blueColorPick"></div>
+    <div class="box greenBox" id="greenColorPick"></div>
+</body>
+</html>
