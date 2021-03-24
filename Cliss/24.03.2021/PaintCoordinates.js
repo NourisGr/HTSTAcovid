@@ -2,7 +2,6 @@ signalDrawing = false;
 var x = 0;
 var y = 0;
 buttonState = false;
-var myColorChoice = "black";
 
 /*
 function drawline(xstart,ystart,xend,yend)
@@ -120,7 +119,7 @@ function NoDraw()
     }
     else
     {
-        document.getElementById("btn").innerHTML = "Stop drawing // Hal op ze zeechnen // Arrêter de dessiner // Zeichnen blockieren";
+        document.getElementById("btn").innerHTML = "Stop drawing // D'Zeechnen blokéieren // Arrêter de dessiner // Zeichnen blockieren";
     }
     buttonState = !buttonState;
 }
