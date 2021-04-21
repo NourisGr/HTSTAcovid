@@ -2,23 +2,8 @@ signalDrawing = false;
 var x = 0;
 var y = 0;
 buttonState = false;
-
-/*
-function drawline(xstart,ystart,xend,yend)
-{
-    let mydrawing= document.getElementById("canvas");
-    let ctx= mydrawing.getContext("2d");
-    let canvaswidth= mydrawing.width;
-    let canvasheight= mydrawing.height;
-
-    ctx.moveTo(xstart+(canvaswidth/2),-ystart+(canvasheight/2));
-    ctx.lineTo(xend+(canvaswidth/2),-yend+(canvasheight/2));
- 
-    ctx.moveTo(xstart+(canvaswidth/2),ystart+(canvasheight/2));
-    ctx.lineTo(xend+(canvaswidth/2),yend+(canvasheight/2));
-    ctx.stroke();
-}
-*/
+var myColorChoice = "black";
+var colors=["black","red","orange","pink","yellow"];
 
 function FirstDrawing()
 {
@@ -26,18 +11,35 @@ function FirstDrawing()
     document.getElementById("canvas").addEventListener("mouseup", stopDrawing);
     document.getElementById("canvas").addEventListener("mousemove", mouseMoving);
     document.getElementById("btn").addEventListener("click", NoDraw);
-    document.getElementById("blackColorPick").addEventListener("click", blackChoice);
-    document.getElementById("redColorPick").addEventListener("click", redChoice);
-    document.getElementById("blueColorPick").addEventListener("click", blueChoice);
-    document.getElementById("greenColorPick").addEventListener("click", greenChoice);
+
+    for(curentcolor of colors){
+        let newcolor = document.createElement("div");
+        newcolor.classList.add("box");
+        newcolor.style = "background-color:" + curentcolor;
+        newcolor.id = "colorpick" + curentcolor;
+        document.body.append(newcolor);
+        let myFunctionCall = SomeColorChanges.bind(null, curentcolor);
+        newcolor.addEventListener("click", myFunctionCall);
+    }
+
+    /*let myBlackFunctionCall = SomeColorChanges.bind(null, "black");
+    document.getElementById("blackColorPick").addEventListener("click", myBlackFunctionCall);
+    let myRedFunctionCall = SomeColorChanges.bind(null, "red");
+    document.getElementById("redColorPick").addEventListener("click", myRedFunctionCall);
+    let myBlueFunctionCall = SomeColorChanges.bind(null, "blue");
+    document.getElementById("blueColorPick").addEventListener("click", myBlueFunctionCall);
+    let myGreenFunctionCall = SomeColorChanges.bind(null, "green");
+    document.getElementById("greenColorPick").addEventListener("click", myGreenFunctionCall);*/
 
 
-    /*
-    drawline(20,20,100,100)
-    drawline(-250,0,250,0)
-    drawline(0,-250,0,250)
-    myMouseDown(); //You need to write myMouseDown(); to CALL the function
-    */
+
+}
+
+function SomeColorChanges(pickedColor)
+{
+    myColorChoice = pickedColor;
+    resetAllBorders()
+    document.getElementById(pickedColor + "ColorPick").style = "border: solid 5px pink;";
 }
 
 function resetAllBorders()
@@ -48,29 +50,6 @@ function resetAllBorders()
     document.getElementById("greenColorPick").style = "";
 }
 
-function blackChoice()
-{
-    resetAllBorders()
-    document.getElementById("blackColorPick").style = "border: solid 5px pink;";
-}
-
-function redChoice()
-{
-    resetAllBorders()
-    document.getElementById("redColorPick").style = "border: solid 5px pink;";
-}
-
-function blueChoice()
-{
-    resetAllBorders()
-    document.getElementById("blueColorPick").style = "border: solid 5px pink;";
-}
-
-function greenChoice()
-{
-    resetAllBorders()
-    document.getElementById("greenColorPick").style = "border: solid 5px pink;";
-}
 
 function mouseMoving(e)
 {
@@ -79,6 +58,8 @@ function mouseMoving(e)
         //drawline(context, x, y, e.offsetX, e.offsetY);
         let mydrawing = document.getElementById("canvas");
         let ctx = mydrawing.getContext("2d");
+        ctx.beginPath();
+        ctx.strokeStyle = myColorChoice;
         ctx.moveTo(x,y);
         ctx.lineTo(e.offsetX,e.offsetY);
         x = e.offsetX;
@@ -115,11 +96,11 @@ function NoDraw()
 {
     if(!buttonState)
     {
-        document.getElementById("btn").innerHTML = "Start drawing // D´Zeechnen aktivéieren // Commence à dessiner // Mit dem zeichnen beginnen";
+        document.getElementById("btn").innerHTML = "Start drawing";
     }
     else
     {
-        document.getElementById("btn").innerHTML = "Stop drawing // D'Zeechnen blokéieren // Arrêter de dessiner // Zeichnen blockieren";
+        document.getElementById("btn").innerHTML = "Stop drawing";
     }
     buttonState = !buttonState;
 }
