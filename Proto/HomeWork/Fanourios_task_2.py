@@ -5,6 +5,6 @@ print("Result 1 it's : ",Rectangle(Length=15, Width=10),"m^2")
 print("Result 2 it's : ",Rectangle(Length=5, Width=1),"m^2")
 print("Result 3 it's : ",Rectangle(Length=25, Width=30),"m^2")
 
-import FanouriosTask_1.py
+import Proto.HomeWork.FanouriosTask_1
 
-FanouriosTask_1.circular_area(10)
+Proto.HomeWork.FanouriosTask_1.circular_area(10)
