@@ -1,0 +1,10 @@
+Create an HTML + JS  page that:
+
+1. Given an array of strings: ["Apples","Cheries","Pears"]  in JS,
+will display a new select list in HTML (when the page loaded) that will contain:
+    - the strings in the array (each item of the array is an item of the select list)
+    - one single item on top stating "Please select a fruit"
+
+2. When the user is CHANGING the previous exercise select option, you are requested 
+to display a new image with the fruit beeing selected (any previously selected fruit must disapear)
+

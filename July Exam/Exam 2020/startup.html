@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Recipe builder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <style>
+            img {
+                width: 100px;
+            }
+
+            .recipeItems {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+        <script>
+            let arrIngredients = [
+                0 /*salt*/, 0 /*carrots*/, 0 /*cucumber*/, 0 /*flouer*/, 0 /*milk*/, 0 /*mozzarella*/, 0 /*pepper*/, 0 /*tomatoes*/, 0 /*water*/,
+            ];
+        </script>
+    </head>
+    <body>
+        <h1>Recipe builder, please click to add some ingredients:</h1>
+        <div class="recipeItems">
+            <img src="salt.jpg" onclick="addItemToRecipe('Salt')" />
+            <img src="carrots.jpg" onclick="addItemToRecipe('Carrots')" />
+            <img src="cucumber.jpg" onclick="addItemToRecipe('Cucumber')" />
+            <img src="flouer.jpg" onclick="addItemToRecipe('Flouer')" />
+            <img src="milk.jpg" onclick="addItemToRecipe('Milk')" />
+            <img src="mozzarella.jpg" onclick="addItemToRecipe('Mozzarella')" />
+            <img src="pepper.jpg" onclick="addItemToRecipe('Pepper')" />
+            <img src="tomatoes.jpg" onclick="addItemToRecipe('Tomatoes')" />
+            <img src="water.jpg" onclick="addItemToRecipe('Water')" />
+        </div>
+        <h1>Your resulting recipe, is:</h1>
+        <ul id="recipe"></ul>
+        <button onclick="reset();">Reset recipe</button>
+    </body>
+</html>

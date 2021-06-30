@@ -1,0 +1,4 @@
+- Basic Js coding 40pts
+- Arrays + Lists 30pts
+- Async calls 20pts 
+- Social competence 10pts
