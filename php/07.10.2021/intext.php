@@ -9,22 +9,20 @@
 <body>
 <?php
 
-$opt1 = "VOLKSWAGEN";
-$opt2 = "AUDI";
-$opt3 = "FORD";
-$opt4 = "TESLA";
-$opt5 = "BMW";
-
+$cars = ["Volvo","Mercedes","Dacia","Tesla"];
 ?>
 
 <select>
 
-    <option><?= $opt1 ?></option>
-    <option><?= $opt2 ?></option>
-    <option><?= $opt3 ?></option>
-    <option><?= $opt4 ?></option>
-    <option><?= $opt5 ?></option>
-     
+<?php
+for ($=i;$i<count($cars);$i++)
+{
+?> 
+<option> <?= $cars[$i]; ?></option>
+<?php 
+}
+?>
 </select>
+
 </body>
 </html>
