@@ -1,0 +1,5 @@
+red;2
+green;1
+blue;12
+green;12
+red;
